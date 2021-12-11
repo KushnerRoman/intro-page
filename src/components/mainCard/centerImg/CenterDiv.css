@@ -7,6 +7,7 @@
     
 }
 .images{
+    opacity: 0.8;
     border-radius: 20px;
     width: 240px;
     height: 250px;    
@@ -16,18 +17,17 @@
 }
 .action-bar{
     position: absolute;
-    margin-top:50px;    
-    height: 55px;
+    margin-top:30px;     
     width: 238px;
-    background-color: rgba(0, 0, 0, 0.589);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     
 }
 .action-icon{
-    color: #ecececbe !important;
-    transform: scale(1.5);
+    
+    color: #ffffff !important ;
+    transform: scale(1.5) ;
 }
 .action-icon:hover{
     transform: scale(1.8);
@@ -36,9 +36,9 @@
 .title-image {
     position: absolute;
     text-align: center;
-    color: rgba(255, 255, 255, 0.548);
-    background-color:rgba(0, 0, 0, 0.589) ;
-    margin-top: 150px;
+    color: rgba(255, 255, 255, 0.774);
+    background-color:rgba(0, 0, 0, 0.349) ;
+    margin-top: 170px;
     height: 50px;
     width: 238px;
 }
