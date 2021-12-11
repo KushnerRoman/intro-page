@@ -1,0 +1,34 @@
+.container-card{
+    display: flex;
+    align-items: stretch;
+    width: 100vw;
+    height: 250px;
+    background-color: antiquewhite;
+    margin-top: 25px;
+
+}
+.left-tags-div{
+    background-color: antiquewhite;
+    height: 250px;
+    min-width: 25%;
+}
+
+
+.center-images-div{
+
+    height: 250px;
+    min-width: 50%;
+}
+.flex-image-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+
+.right-actions-div{
+    background-color: antiquewhite;
+    height: 250px;
+    width: 25%;
+}

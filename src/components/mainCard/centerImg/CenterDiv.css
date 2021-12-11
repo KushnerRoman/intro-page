@@ -1,0 +1,49 @@
+.container-image-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    
+    
+}
+.images{
+    border-radius: 20px;
+    width: 240px;
+    height: 250px;    
+    background-size: cover;
+    background-position: center;
+    justify-items: center;
+}
+.action-bar{
+    position: absolute;
+    margin-top:50px;    
+    height: 55px;
+    width: 238px;
+    background-color: rgba(0, 0, 0, 0.589);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.action-icon{
+    color: #ecececbe !important;
+    transform: scale(1.5);
+}
+.action-icon:hover{
+    transform: scale(1.8);
+}
+
+.title-image {
+    position: absolute;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.548);
+    background-color:rgba(0, 0, 0, 0.589) ;
+    margin-top: 150px;
+    height: 50px;
+    width: 238px;
+}
+
+.action-icon-clicked{
+    color: #bbff00be !important;
+    transform: scale(2.2);
+}

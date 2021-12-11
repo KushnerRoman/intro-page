@@ -1,0 +1,111 @@
+.container{
+    
+    background-color: cadetblue;
+    position: relative;
+    width: 100vw;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    
+}
+.header{
+ display:flex;
+ position: relative;
+ height: 70px;
+ background-color: rgba(205, 223, 255, 0.877);   
+}
+.left-logo-div {
+    position: absolute;
+    margin: 10px ;
+    left: 10px;
+}
+.right-btn-div{
+  position: absolute;
+  margin: 20px;
+  right: 15px;
+}
+
+
+.menu-bar-img{
+    position: absolute;
+    margin: 0 auto;
+    height: 25px;
+    float: right;    
+}
+.roman-logo-png{
+    position: absolute;
+    margin: 0;
+    height: 60px;
+
+    
+}
+.moreVert{
+  transform: scale(1.3);
+
+}
+.moreVert:hover{
+  transform: scale(2);
+  color:rgb(25, 0, 255);
+}
+
+.moreVertClicked{
+  transform: scale(2);
+  color:rgb(25, 0, 255);
+}
+
+
+
+  .footer{
+      background-color: #142714e0;
+      position: absolute;
+      width: 100vw;
+      height: 70px;
+      bottom: 0;
+      display: flex;
+   
+  }
+
+  .welcom-left-div{
+    position: relative;
+    width: 50vw;
+    color: antiquewhite;
+    padding-left:15px;
+    
+    
+  }
+  .icons-bar-div{
+    position: relative;
+    width: 50vw;
+    right:0;
+    float: right;
+   
+    
+
+  }
+  .icons{
+      float: right;
+      margin-right: 25px;
+  }
+  .btnIcon{
+        right:0;
+      height: 75px;
+      color: #ffffffcc !important;
+
+      
+}
+.btnIcon:hover{
+  right:0;
+  height: 75px;
+  color: #02d9ff !important;
+  transform: scale(1.2);
+}
+.btnIconClick{
+    height: 75px;
+    color: #5f92ff !important;
+    transform: scale(1.3);
+
+}
+
+
+
+  

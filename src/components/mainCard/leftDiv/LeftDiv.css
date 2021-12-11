@@ -1,0 +1,16 @@
+.container-categories-tag{
+    margin: 80px 55px  ;
+}
+.titles-categories-btn{
+    display: flex;
+    flex-direction: row;
+    
+
+}
+.btn-category{
+    margin-left: 5px ;
+    border-radius: 30px;
+    border: 1px  #888888;
+    background-color: aliceblue;
+    box-shadow:  3px 3px #888888;
+}
