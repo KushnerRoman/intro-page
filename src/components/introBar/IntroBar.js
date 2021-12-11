@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import  './IntroBar.css'
+import aiImg from '../../image/ai1.jpg'
 import MoreVertIcon from '@mui/icons-material/MoreVert'
 import HomeIcon from '@mui/icons-material/Home';
 import SettingsIcon from '@mui/icons-material/Settings';
@@ -20,7 +21,7 @@ export default function IntroBar() {
     const [settingsClicked, setSettingsClicked] = useState(false);
 
     return (
-        <div className="container"  style={{ backgroundImage : `url(${AiImage})`}} >
+        <div className="container"  style={{ backgroundImage : `url(${aiImg})`}} >
             <div className="header">
               <div className="left-logo-div">
                  <img src={RomanLogo} className="roman-logo-png" />
