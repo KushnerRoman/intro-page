@@ -4,16 +4,40 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import CloseIcon from '@mui/icons-material/Close';
 import { IconButton } from '@mui/material';
 import './RightDiv.css'
+import ShareModal from '../../modal/ShareModal';
+
+
+
 
 export default function RightDiv(props) {
 
   const [shareClicked, setShareClicked] = useState(false)
   const [favoriteClicked, setFavoriteClicked] = useState(false)
   const [closeClicked, setCloseClicked] = useState(false)
+    const [shareModal,setShareModal]=useState(false);
+  
 
+const closeHandler=()=>{
+    setCloseClicked(!closeClicked)
+    
+    props.closeDiv()
+}
 
+const handlerModalClose=()=>{
+    setShareClicked(false)
+    setShareModal(false)
+}
+
+const handlerShare=()=>{
+    setShareClicked(true);
+    setShareModal(true)
+    
+    
+    
+}
     return (
         <div className="container-right-div">
+            <ShareModal isOpen={shareModal}  shareClose={()=>handlerModalClose()}/>
             <div className="title-flex">
                      <div className="title">
                     <h3>
@@ -25,21 +49,21 @@ export default function RightDiv(props) {
             </div>
 
             <div className="user-actions">
-                <IconButton className={!shareClicked? "btn" : "btn-clicked"} onClick={()=>setShareClicked(!shareClicked)}>
+                <IconButton className={!shareClicked? "btn" : "btn-clicked"} onClick={()=>handlerShare()} >
                     <ShareIcon />
                 </IconButton>
                 <IconButton className={!favoriteClicked? "btn" : "btn-clicked"} onClick={()=>setFavoriteClicked(!favoriteClicked)}>
                     <FavoriteBorderIcon/>
                 </IconButton>
                 
-                <IconButton className={!closeClicked? "btn-close" : "btn-clicked-close"} onClick={()=>setCloseClicked(!closeClicked)}>
+                <IconButton className={!closeClicked? "btn-close" : "btn-clicked-close"} onClick={()=>closeHandler()}>
                     <CloseIcon/>
                 </IconButton>
                 
                
             </div>
 
-
+            
         </div>
     )
 }

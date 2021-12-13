@@ -4,11 +4,25 @@ import imgTest from '../../image/arch/arch1.png'
 import CenterDiv from './centerImg/CenterDiv'
 import LeftDiv from './leftDiv/LeftDiv'
 import RightDiv from './rightDiv/RightDiv'
+import ShareModal from '../modal/ShareModal'
 
 export default function MainCard(props) {
-    const [card,setCard]=useState()
+    const [card,setCard]=useState(props.title)
+    const [showCard,setShowCard]=useState(true)
+
+    const close=()=>{
+        props.close(true)
+    }
+    const showShareModal=()=>{
+       props.showShareModal();
+    }
+    const closeDiv=()=>{
+        setShowCard(false)
+    }
     return (
-        <div className="container-card">
+        
+        <div className="container-card" style={{display: showCard? "flex":"none"}} >
+            
 
             <div className="left-tags-div">
                 <LeftDiv title={props.title}/>
@@ -28,7 +42,7 @@ export default function MainCard(props) {
 
             </div>
             <div className="right-actions-div">
-                <RightDiv title={props.title}/>
+                <RightDiv title={props.title} close={()=>close()} shareModal={()=>showShareModal()} closeDiv={()=>closeDiv()}/>
             </div>
             
         </div>

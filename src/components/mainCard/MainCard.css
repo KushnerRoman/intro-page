@@ -1,12 +1,14 @@
 .container-card{
     display: flex;
     align-items: stretch;
-    width: 100vw;
+    width: 99vw;
     height: 250px;
     background-color: rgb(236, 236, 236);
     margin-top: 25px;
-
+    animation: fadeOut 0.8s forwards;
 }
+
+
 .left-tags-div{
     background-color: rgb(236, 236, 236);
     height: 250px;

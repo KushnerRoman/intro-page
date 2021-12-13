@@ -38,9 +38,9 @@
     text-align: center;
     color: rgba(255, 255, 255, 0.774);
     background-color:rgba(0, 0, 0, 0.349) ;
-    margin-top: 170px;
+    margin: 170px 2px;
     height: 50px;
-    width: 238px;
+    width: 237px;
 }
 
 .action-icon-clicked{
