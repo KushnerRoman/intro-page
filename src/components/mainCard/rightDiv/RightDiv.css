@@ -36,7 +36,9 @@
   .btn-clicked{
     color: #bbff00 !important;
     transform: scale(1.6);
+    
   }
+ 
   .btn-close:hover{
     color: #ff0000 !important;
     transform: scale(1.8);

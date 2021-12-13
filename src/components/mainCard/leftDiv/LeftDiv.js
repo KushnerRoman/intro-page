@@ -4,7 +4,7 @@ import  './LeftDiv.css'
 import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
 import DashboardCustomizeIcon from '@mui/icons-material/DashboardCustomize';
 export default function LeftDiv(props) {
-    const [state, setstate] = useState([props.title])
+    // const [state, setState] = useState([props.title])
     return (
         <div className="container-categories-tag">
             <div className="icon-category">
